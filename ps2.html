@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReverseANumber</title>
+</head>
+<body>
+   
+
+    <h2>Reverse Number</h2>
+    <pre>
+        // 1) Input: Enter a number: 567
+        // Input: Enter a number: -890
+
+        x = prompt("Enter the number: ")
+        res = 0;
+        let res1 = "";
+        if (x > 0) {
+            while (x != 0) {
+                rem = x % 10;
+                res = res * 10 + rem;
+                x = Math.floor(x / 10)
+            }
+            console.log(res)
+        } else {
+            let x1 = Math.abs(x)
+            while (x1 !== 0) {
+                let rem = x1 % 10;
+                res = res * 10 + rem;
+                x1 = Math.floor(x1 / 10);
+                res1 = "-" + res;
+            }
+            console.log(res1);
+        }
+
+        // Output: 765
+        // Output: -98
+    </pre>
+</body>
+</html>

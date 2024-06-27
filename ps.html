@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        pre {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Programs</h1>
+
+        <h2>1. Sum of Odd Digits</h2>
+        <pre>
+            let x = "1633";
+            let oddsum = 0;
+            for (let i = 0; i &lt; x.length; i++) {
+                if (x[i] % 2 == 1) {
+                    oddsum += Number(x[i]);
+                }
+            }
+            console.log("Odd sum is:", oddsum);
+        </pre>
+
+        <h2>2. Difference between Even Sum and Odd Sum</h2>
+        <pre>
+            let x = "163382";
+            let oddsum = 0;
+            let evensum = 0;
+            for (let i = 0; i &lt; x.length; i++) {
+                if (x[i] % 2 == 1) {
+                    oddsum += Number(x[i]);
+                } else {
+                    evensum += Number(x[i]);
+                }
+            }
+            let d;
+            if (oddsum > evensum) {
+                d = oddsum - evensum;
+                console.log("Difference is ", d);
+            } else {
+                d = evensum - oddsum;
+                console.log("Difference is ", d);
+            }
+        </pre>
+
+        <h2>3. Check Whether Even Sum or Odd Sum is Greater</h2>
+        <pre>
+            let x = "163382";
+            let oddsum = 0;
+            let evensum = 0;
+            for (let i = 0; i &lt; x.length; i++) {
+                if (x[i] % 2 == 1) {
+                    oddsum += Number(x[i]);
+                } else {
+                    evensum += Number(x[i]);
+                }
+            }
+            if (oddsum > evensum) {
+                console.log("Odd sum is greater");
+            } else {
+                console.log("Even sum is greater");
+            }
+        </pre>
+    </div>
+</body>
+</html>
